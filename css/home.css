@@ -14,17 +14,17 @@ body {
 
 /* Dark palette for the title section */
 .site-title {
-    background-color: rgba(23, 99, 171, 0.85); /* Darker background */
+    background-color:transparent; /* Darker background */
     padding: 20px 40px;
     border-radius: 10px;
     text-align: center;
     margin-bottom: 40px; /* Space below the title */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Slight shadow for depth */
+    box-shadow: 0 0 40px rgba(16, 48, 255, 0.5); /* Slight shadow for depth */
 }
 
 /* Title text styling */
 .site-title h1 {
-    color: #fff; /* Light text */
+    color: #06103a; /* Light text */
     font-size: 48px;
     margin: 0;
     font-family: 'Arial', sans-serif;
@@ -42,7 +42,7 @@ body {
 
 /* Styling for the big box (square) */
 .big-box {
-    background-color: #1ae052; /* Fancy coral color */
+    background-color:transparent; /* Fancy coral color */
     padding: 40px;
     text-align: center;
     border-radius: 60px;
@@ -62,7 +62,7 @@ body {
 
 /* Hover effect for the big box */
 .big-box:hover {
-    background-color: #056a08;
+    background-color: #edf3f6;
     transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
@@ -77,14 +77,14 @@ body {
 
 /* Styling for the small boxes (rectangular) */
 .small-boxes a {
-    background-color: #4DB6AC; /* Fancy teal color */
+    background-color: transparent; /* Fancy teal color */
     padding: 20px;
     margin-bottom: 20px; /* Space between boxes */
     text-align: center;
     border-radius: 40px;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: bold;
-    color: #fff; /* Ensure text is visible */
+    color: #080d3e; /* Ensure text is visible */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth color and size transition */
     border: 2px solid #00796B; /* Border for small boxes */
@@ -93,27 +93,6 @@ body {
 
 /* Hover effect for small boxes */
 .small-boxes a:hover {
-    background-color: #00796B;
+    background-color: #edf3f5;
     transform: scale(1.05); /* Slightly enlarge on hover */
-}
-
-/* Media Query for smaller screens */
-@media (max-width: 600px) {
-    .options-container {
-        flex-direction: column; /* Stack boxes vertically */
-    }
-
-    .big-box, .small-boxes a {
-        font-size: 18px; /* Adjust font size */
-        padding: 15px; /* Adjust padding */
-    }
-
-    .big-box {
-        width: 250px; /* Adjust width for small screens */
-        height: 250px; /* Adjust height for small screens */
-    }
-
-    .small-boxes a {
-        font-size: 16px; /* Adjust font size */
-    }
 }
