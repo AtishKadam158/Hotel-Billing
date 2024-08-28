@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Your Hotel</title>
+    <link rel="stylesheet" href="css/register-hotel.css">
+</head>
+<body>
+    <h2>Register Your Hotel</h2>
+        <form id="registerForm">
+        <div class="form-group">
+            <label for="city">Enter City:</label>
+            <input type="text" id="city" name="city" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="hotelName">Hotel Name:</label>
+            <input type="text" id="hotelName" name="hotelName" required>
+        </div>
+    
+        <div class="form-group">
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+        </div>
+    
+
+        <h3>Create Menu</h3>
+        <div id="categoriesContainer">
+            <div class="category">
+                <label for="categoryName">Category Name:</label>
+                <input type="text" class="categoryName" required>
+                <button type="button" class="addItemButton">Add Food Item</button>
+                <div class="itemsContainer"></div>
+            </div>
+        </div>
+
+        <button type="button" id="addCategoryButton">Add New Category</button><br>
+        <button type="submit" id="submitButton">Submit</button>
+    </form>
+
+    <script src="js/register-hotel.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Pricing</title>
+    <link rel="stylesheet" href="css/check-pricing.css">
+</head>
+<body>
+    <h2>Check Pricing</h2>
+    <form id="cityForm">
+        <label for="cityInput">Enter City:</label>
+        <input type="text" id="cityInput" name="city" required>
+        <button type="submit">Find Restaurants</button>
+    </form>
+
+    <div id="restaurantSelection">
+        <h3>Select a Restaurant</h3>
+        <ul id="restaurantList"></ul>
+    </div>
+
+    <div id="menuSelection">
+        <h3>Select Items and Quantity</h3>
+        <div id="menuItems"></div>
+        <button id="calculateButton">Calculate Total</button>
+        <p id="totalCost"></p>
+    </div>
+
+    <script src="js/check-pricing.js"></script>
+</body>
+</html>

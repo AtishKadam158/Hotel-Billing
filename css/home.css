@@ -1,0 +1,119 @@
+/* Home Page Styles */
+
+/* Background for the entire home page */
+body {
+    background-image: url('../images/background.jpg'); /* Background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Fix the background image in place */
+    margin: 0;
+    font-family: 'Arial', sans-serif; /* Consistent font family for the page */
+    color: #333; /* Default text color */
+}
+
+
+/* Dark palette for the title section */
+.site-title {
+    background-color: rgba(23, 99, 171, 0.85); /* Darker background */
+    padding: 20px 40px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 40px; /* Space below the title */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Slight shadow for depth */
+}
+
+/* Title text styling */
+.site-title h1 {
+    color: #fff; /* Light text */
+    font-size: 48px;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase; /* Uppercase for a strong look */
+}
+
+/* Container for the options (flex layout) */
+.options-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%; /* Full width */
+    margin-top: 50px; /* Space from the title */
+}
+
+/* Styling for the big box (square) */
+.big-box {
+    background-color: #1ae052; /* Fancy coral color */
+    padding: 40px;
+    text-align: center;
+    border-radius: 60px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff; /* Ensure text is visible */
+    box-shadow: 0 0 20px rgba(124, 11, 11, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth color and size transition */
+
+    width: 300px; /* Fixed width for square */
+    height: 300px; /* Fixed height for square */
+    margin-bottom: 30px; /* Space below the big box */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hover effect for the big box */
+.big-box:hover {
+    background-color: #056a08;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Container for small boxes */
+.small-boxes {
+    display: flex;
+    flex-direction: column; /* Stack small boxes vertically */
+    align-items: center;
+    width: 80%; /* Restrict width to avoid edge crowding */
+    max-width: 600px; /* Align width with big box */
+}
+
+/* Styling for the small boxes (rectangular) */
+.small-boxes a {
+    background-color: #4DB6AC; /* Fancy teal color */
+    padding: 20px;
+    margin-bottom: 20px; /* Space between boxes */
+    text-align: center;
+    border-radius: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff; /* Ensure text is visible */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth color and size transition */
+    border: 2px solid #00796B; /* Border for small boxes */
+    width: 100%; /* Full width of the container */
+}
+
+/* Hover effect for small boxes */
+.small-boxes a:hover {
+    background-color: #00796B;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 600px) {
+    .options-container {
+        flex-direction: column; /* Stack boxes vertically */
+    }
+
+    .big-box, .small-boxes a {
+        font-size: 18px; /* Adjust font size */
+        padding: 15px; /* Adjust padding */
+    }
+
+    .big-box {
+        width: 250px; /* Adjust width for small screens */
+        height: 250px; /* Adjust height for small screens */
+    }
+
+    .small-boxes a {
+        font-size: 16px; /* Adjust font size */
+    }
+}

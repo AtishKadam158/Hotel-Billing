@@ -1,0 +1,126 @@
+/* Check Pricing Page Styles */
+
+/* General Page Background */
+body {
+    background-image: url('../images/price.jpg'); /* Background image */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the background image */
+    background-attachment: fixed; /* Fix the background image in place */
+    margin: 0;
+    font-family: 'Arial', sans-serif; /* Consistent font family for the page */
+    color: #333; /* Default text color */
+}
+
+/* General heading styles */
+h2 {
+    margin-top: 40px;
+    color: #0b1850; /* Fancy dark blue color */
+    font-size: 36px; /* Larger font size */
+    font-weight: bold;
+    text-align: center;
+}
+
+/* City Form Styling */
+#cityForm {
+    text-align: center;
+    margin: 0 auto; /* Center the form */
+    max-width: 400px; /* Restrict form width */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Soft shadow for form */
+}
+
+#cityForm input[type="text"] {
+    width: 100%;
+    max-width: 350px; /* Maximum width */
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 18px;
+    margin-bottom: 20px;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Soft shadow for input */
+}
+
+/* Restaurant Selection Styles */
+#restaurantSelection {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#restaurantList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#restaurantList li {
+    padding: 15px;
+    background-color: #4DB6AC; /* Fancy teal color */
+    color: #fff;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+#restaurantList li:hover {
+    background-color: #00796B; /* Darker teal on hover */
+    transform: scale(1.02); /* Slightly enlarge on hover */
+}
+
+/* Menu Selection Styles */
+#menuSelection {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+}
+
+#menuItems {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 600px; /* Restrict maximum width */
+    margin: 0 auto; /* Center the menu items */
+}
+
+#menuItems div {
+    width: 100%;
+    max-width: 500px; /* Restrict width of menu items */
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #FF6F61; /* Fancy coral color */
+    color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow for menu items */
+}
+
+/* Calculate Button Styles */
+#calculateButton {
+    margin-top: 30px;
+    padding: 15px 25px;
+    background-color: #FF6F61; /* Fancy coral color */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+#calculateButton:hover {
+    background-color: #e65c5c; /* Darker coral on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Total Cost Styles */
+#totalCost {
+    margin-top: 30px;
+    font-size: 28px;
+    color: #28a745; /* Fancy green color */
+    font-weight: bold;
+    text-align: center;
+}
